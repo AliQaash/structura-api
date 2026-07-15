@@ -1,0 +1,28 @@
+{
+  "name": "structura-api",
+  "version": "1.0.0",
+  "description": "An AI-powered REST API that turns messy unstructured text into clean structured JSON.",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "keywords": [
+    "api",
+    "llm",
+    "ai",
+    "express",
+    "nodejs",
+    "structured-data",
+    "text-extraction"
+  ],
+  "author": "Ali Qaash",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-rate-limit": "^7.4.0"
+  }
+}
