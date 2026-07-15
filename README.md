@@ -4,7 +4,7 @@ An AI-powered REST API that turns messy, unstructured text into clean, structure
 
 Send it a job posting, a product description, or a contact block, and it returns typed data your application can actually use, extracted by an LLM but validated and shaped by the API so the output is reliable rather than freeform.
 
-**Live demo:** [your-deployment-url] — paste any text and watch it get structured in real time.
+**Live demo:** https://structura-api-btxr.onrender.com — paste any text and watch it get structured in real time.
 
 ![Structura demo](screenshot.png)
 
@@ -26,7 +26,7 @@ Three types are supported:
 Example:
 
 ```bash
-curl -X POST https://your-url/api/extract \
+curl -X POST https://structura-api-btxr.onrender.com/api/extract \
   -H "Content-Type: application/json" \
   -d '{
     "type": "job_posting",
