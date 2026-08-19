@@ -7,7 +7,7 @@
 // per extraction type, and defensive parsing on the way back.
 
 const GROQ_URL = "https://api.groq.com/openai/v1/chat/completions";
-const MODEL = "llama-3.3-70b-versatile";
+const MODEL = "openai/gpt-oss-120b";
 
 // Each supported type has a fixed shape the model must return. Giving the
 // model an explicit schema is what turns "summarize this" (unreliable) into

@@ -9,6 +9,11 @@ dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 3000;
 
+// Trust Render's proxy layer so express-rate-limit (and req.ip generally)
+// sees the real client IP from X-Forwarded-For instead of treating every
+// request as coming from the same upstream proxy.
+app.set('trust proxy', 1);
+
 // --- Middleware ---
 app.use(express.json({ limit: "100kb" })); // cap payload size so a huge body can't tie up the LLM
 app.use(cors({ origin: process.env.CLIENT_ORIGIN || "*" }));
